@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharon's Music World | E-Commerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+               <a href="index.html"><img src="images/Logo maker project (1).png" width="350px"></a>
+            </div>
+           <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+               </ul>
+           </nav>
+            <a href="cart.html"><img src="images/file (1).png" width="30px" height="30px"></a>
+           <img src="images/menu.png" class="menu-icon" 
+           onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Elevate Your Music Experience!</h1>
+                <P>Your Melodic Journey Begins Here.</P>
+                <a href="" class="btn">Explore Now &#8594;</a>
+            </div> 
+            
+        </div>
+    </div>
+    </div>
+
+<!-------- featured categories --------->
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/stentor 2.jpg">
+            </div>
+                
+            <div class="col-3">
+                <img src="images/ELEC.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/STENTOR2.webp">
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!-------- featured products --------->
+<div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <a href="product details.html"><img src="images/BOW1.jpg"></a>
+            <a href="product details.html"><h4>ADM 4/4 Full Size Student Brazilian Violin Bow</h4></a>
+            <p>Ksh. 7,000</p>
+        
+        </div>
+        <div class="col-4">
+            <img src="images/cello.webp">
+            <h4>Bellafina Musicale Series Cello Outfit 4/4 Size</h4>
+            <p>Ksh. 161,239</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/yamaha1.jpg">
+            <h4>Yamaha YDP165 Arius Series Digital Console Piano with Bench, 88-Key, Black</h4>
+            <p>Ksh. 319,144</p>
+
+        </div>
+        <div class="col-4">
+            <img src="images/violin.jpg">
+            <h4>Handmade Beginners Instrument Violin Kit</h4>
+            <p>Ksh. 682,254</p>
+
+        </div>
+        
+    </div>
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/vsr.webp.">
+            <h4>Adjustable Violin Shoulder Rest Support with Comfortable Foam Pad Fits 4/4 Size Violins</h4>
+            <p>Ksh. 2,500</p>
+        </div>
+        <div class="col-4">
+            <img src="images/rosin.webp">
+            <h4>Pirastro Olive Rosin Standard</h4>
+
+            <p>Ksh. 2,500</p>
+        </div>
+        <div class="col-4">
+            <img src="images/sand.jpg">
+            <h4>Violin Viola Stand Lightweight and Foldable (Burgundy)</h4>
+            
+            <p>Ksh. 2,500</p>
+        </div>
+        <div class="col-4">
+            <img src="images/srings.jpg">
+            <h4>Violin Strings 4/4 Set (E: Gold A. D. G Dominant)</h4>
+            
+            <p>Ksh. 2,500</p>
+        </div>
+        <div class="col-4">
+            <img src="images/kit.jpg">
+            <h4>Violin Accessories Kit 15Pcs</h4>
+            
+            <p>Ksh. 3,731</p>
+        </div>
+        <div class="col-4">
+            <img src="images/tuner.jpg">
+            <h4>Professional Violin Viola Tuner</h4>
+            
+            <p>Ksh. 3,908</p>
+        </div>
+        <div class="col-4">
+            <img src="images/care.jpg">
+            <h4>Orchestral String Instrument Cleaning & Care Product</h4>
+            
+            <p>Ksh. 5,412</p>
+        </div>
+        <div class="col-4">
+            <img src="images/sheet stand.jpg">
+            <h4>Lightweight Music Stand</h4>
+            
+            <p>Ksh. 7,977</p>
+        </div>
+        
+    </div>
+</div>   
+   
+    
+    <!---------Footer--------->
+    <div class="Footer">
+        <div class="container">
+            <div class="row">
+                <div class="Footer-col-2">
+                    
+                    <p>Our purpose is to provide a wide selection of high quality musical instruments for our customers</p>
+                </div>
+            </div>
+            
+            <div class="Footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                    <li>TikTok</li>
+                </ul>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024</p>
+        </div>
+    </div>
+
+<!----------js for toggle menu---------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight =="0px")
+    {
+        MenuItems.style.maxHeight = "200px";
+    }
+    else
+    {
+        MenuItems.style.maxHeight = "0px";
+    }
+    }
+</script>
+
+</body>
+</html>
